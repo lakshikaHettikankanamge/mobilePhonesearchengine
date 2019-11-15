@@ -1,0 +1,24 @@
+{
+  "name": "mobile_phone_search_engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client install":"npm install --prefix client",
+    "start": "server.js",
+    "server" :"nodemon server.js",
+    "client":"npm start --prefix client",
+    "dev" :"concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "TL Hettikankanamge",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.17.0",
+    "mongoose": "^5.5.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
